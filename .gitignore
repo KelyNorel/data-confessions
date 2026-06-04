@@ -5,4 +5,4 @@ __pycache__/
 .ipynb_checkpoints/
 venv/
 go_venv.txt
-.DS_Store
+.DS_Store**/.DS_Store
