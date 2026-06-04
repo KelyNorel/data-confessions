@@ -140,7 +140,8 @@ data-confessions/
 git clone https://github.com/KelyNorel/data-confessions.git
 cd data-confessions
 python -m venv venv
-source venv/bin/activate
+pyenv virtualenv 3.11.14 data-confessions
+pyenv activate data-confessions
 pip install -r requirements.txt
 
 # Add your Anthropic API key
