@@ -1,0 +1,12 @@
+langgraph
+langchain-anthropic
+langchain-core
+python-dotenv
+pandas
+requests
+jupyter
+streamlit
+matplotlib
+seaborn
+scipy
+statsmodels
