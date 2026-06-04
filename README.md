@@ -139,7 +139,6 @@ data-confessions/
 # Clone and activate environment
 git clone https://github.com/KelyNorel/data-confessions.git
 cd data-confessions
-python -m venv venv
 pyenv virtualenv 3.11.14 data-confessions
 pyenv activate data-confessions
 pip install -r requirements.txt
