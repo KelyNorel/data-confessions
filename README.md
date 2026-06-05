@@ -127,6 +127,22 @@ across different runs. This reflects genuine uncertainty in the data,
 not a bug. The Skeptic's FINAL VERDICT anchors the conclusion each run.
 ---
 
+## Streamlit UI
+
+### Question Selector
+*4 suggested questions + free-form input*
+![Question Selector](docs/screenshots/screenshot_06_ui_question_selector.png)
+
+### Agents at Work
+*Real-time status updates as each agent completes*
+![Agents Working](docs/screenshots/screenshot_07_ui_agents_working.png)
+
+### Final Report
+*"The Confession" — plain language answer to the original question*
+![Final Report](docs/screenshots/screenshot_08_ui_final_report.png)
+
+---
+
 ## Project Structure
 ```
 data-confessions/
@@ -217,4 +233,4 @@ jupyter notebook notebooks/exploration.ipynb
 
 **Author:** Raquel (Kely) Norel, PhD  
 **Domain:** Causal Inference / Data Science / Agentic AI  
-**Status:** Analysis complete | Streamlit UI coming soon
+**Status:** ✅ Complete
