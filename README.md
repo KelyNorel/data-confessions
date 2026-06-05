@@ -94,6 +94,39 @@ a cumulative analysis where each perspective informs the next.
 
 ---
 
+## Prompt Engineering & Iteration
+
+The agent prompts were iteratively refined through testing to improve output quality.
+
+### Key iterations
+
+**Causal Analyst — added alternative causes investigation**  
+Initial outputs dismissed the rain effect without exploring *why* it was small.  
+Added explicit instructions to investigate: reporting bias, displacement effects,  
+crime-type specificity, and Bradford Hill criteria. Result: richer causal reasoning.
+
+**Skeptic — added definitive verdict requirement**  
+Initial outputs ended with "we need more data" — unhelpful for a final report.  
+Added instruction: *"End with FINAL VERDICT — one clear, direct sentence."*  
+Result: the Skeptic now takes a position rather than hedging.
+
+**Reporter — removed hardcoded question**  
+Initial prompt hardcoded "Does rain reduce crime?" as the question to answer.  
+Fixed by passing the original question dynamically at runtime.  
+Result: system works correctly for any question, not just the default one.
+
+**All agents — added conciseness constraint**  
+Initial outputs were 600-800 words per agent — too verbose for a UI.  
+Added: *"300-400 words maximum. No filler, no repetition."*  
+Result: tighter, more readable outputs.
+
+### Observed variability  
+LLM outputs vary across runs — the final verdict on rain's causal role  
+ranged from "No effect" to "Yes, but barely" to "Real but context-dependent"  
+across different runs. This reflects genuine uncertainty in the data,  
+not a bug. The Skeptic's FINAL VERDICT anchors the conclusion each run.
+---
+
 ## Project Structure
 ```
 data-confessions/

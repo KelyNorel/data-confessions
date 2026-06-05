@@ -41,7 +41,7 @@ class AnalysisState(TypedDict):
 
 # ── LLM ───────────────────────────────────────────────────────────────────────
 
-llm = ChatAnthropic(model="claude-sonnet-4-20250514", max_tokens=2000)
+llm = ChatAnthropic(model="claude-sonnet-4-20250514", max_tokens=4000)
 
 
 # ── Data summary (loaded once) ─────────────────────────────────────────────────
